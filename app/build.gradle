@@ -2,6 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
+
+    //bmob
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.colinapp.onlinemilkorderapp"
         minSdkVersion 19
@@ -26,4 +29,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //bmob
+
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'cn.bmob.android:bmob-sms:1.0.1'
+    compile 'cn.bmob.android:http-legacy:1.0'
+
+
 }

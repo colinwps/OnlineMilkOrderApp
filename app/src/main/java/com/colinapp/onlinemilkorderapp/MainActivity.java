@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import cn.bmob.v3.Bmob;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //bmob 服务初始化
+        Bmob.initialize(this,"b3f8dce8dcbe72882c843b5b47269a4d");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -43,8 +48,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.action_about:
+                break;
+            case R.id.action_ver:
+                break;
+                default:
+                    break;
         }
 
         return super.onOptionsItemSelected(item);
