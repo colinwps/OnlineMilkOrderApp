@@ -5,34 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_signup"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
 
     <EditText
-        android:id="@+id/txt_name"
+        android:id="@+id/txt_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_inputname"
-        android:textSize="20dp"/>
-    <EditText
-        android:id="@+id/txt_age"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/txt_inputage"
-        android:textSize="20dp"/>
-    <Button
-        android:id="@+id/btn_insert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_name"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:hint="@string/txt_phoneno"
+        android:inputType="number"/>
 
     <Button
-        android:id="@+id/btn_open"
+        android:id="@+id/btn_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="注册"
+        android:text="@string/txt_send"
         android:textSize="20dp"/>
-
 </android.widget.LinearLayout>

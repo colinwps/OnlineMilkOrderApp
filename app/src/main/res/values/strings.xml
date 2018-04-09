@@ -3,4 +3,16 @@
     <string name="action_settings">Settings</string>
     <string name="action_about">关于</string>
     <string name="action_ver">版本</string>
+    <string name="txt_inputname">请输入姓名</string>
+    <string name="txt_inputage">请输入年龄</string>
+    <string name="btn_name">提交数据</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="txt_signup">账户注册</string>
+    <string name="txt_phoneno">请输入手机号</string>
+    <string name="txt_send">发送验证码</string>
+
 </resources>
